@@ -1,3 +1,26 @@
+# Cross-Corpus Speech-Emotion Recognition  
+MFCC ➜ PCA/NMF Compression ➜ CNN & SVM Benchmarks
+
+> *Reproducible EE8104 Adaptive Signal Processing project (Winter 2025)*
+
+Speech-emotion recognition (SER) models often perform brilliantly on a **single dataset** yet stumble the moment recording conditions—or speakers—change.  
+This repo tackles that mismatch by **training and evaluating on two publicly available corpora at once**:
+
+* **TESS** — Toronto Emotional Speech Set (2 800 clips)  
+* **RAVDESS** — Ryerson Audio-Visual Database of Emotional Speech and Song (1 260 clips)
+
+Our pipeline walks through every stage, end-to-end:
+
+1. **Feature extraction** – 13 × 85 MFCC maps for each utterance.  
+2. **Low-rank analysis** – PCA & NMF reveal shared structure and let us compress features to 26 / 52 dimensions.  
+3. **Classical baseline** – RBF-SVMs on the compressed vectors (48 – 65 % accuracy).  
+4. **Deep baselines** –  
+   * A 5-block CNN on full MFCC maps (≈ 91 % test accuracy)  
+   * A dual-input CNN that fuses MFCC maps with 26-D PCA+NMF vectors (≈ 92 % test accuracy).  
+5. **Learning-curve study** – How data volume affects SVM vs. CNN performance.
+
+
+
 |  #  | Notebook                             | 1-line tagline                                                      | Details & key outputs                                                                                                                                                                                                 |
 | :-: | ------------------------------------ | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |  01 | **`MFCC_TESS_NOTEBOOK.ipynb`**       | Generate 13 × 85 MFCC maps for the 2 800 TESS recordings.           | • Loads TESS wav files → 16 kHz → 0.5 s pads/trims → MFCC<br>• Saves `X_tess.npy`, `y_tess.npy`, and 80/20 split indices.<br>• Quick sanity MLP reaches \~100 % (shows dataset is easy to over-fit).                  |
