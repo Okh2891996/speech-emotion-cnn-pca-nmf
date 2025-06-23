@@ -1,7 +1,7 @@
 # Cross-Corpus Speech-Emotion Recognition  
 MFCC ➜ PCA/NMF Compression ➜ CNN & SVM Benchmarks
 
-> *Reproducible EE8104 Adaptive Signal Processing project (Winter 2025)*
+> *Reproducible EE8104 Adaptive Signal Processing project (Winter 2025) Supervisor Prof Dr. Sridhar Krishnan*
 
 Speech-emotion recognition (SER) models often perform brilliantly on a **single dataset** yet stumble the moment recording conditions—or speakers—change.  
 This repo tackles that mismatch by **training and evaluating on two publicly available corpora at once**:
