@@ -19,6 +19,8 @@ Our pipeline walks through every stage, end-to-end:
    * A dual-input CNN that fuses MFCC maps with 26-D PCA+NMF vectors (≈ 92 % test accuracy).  
 5. **Learning-curve study** – How data volume affects SVM vs. CNN performance.
 
+The full report is available here →: [Document](https://github.com/user-attachments/files/20856341/Deep.Learning.Vs.Machine.Learning.A.Study.on.SER.pdf)
+
 
 
 |  #  | Notebook                             | 1-line tagline                                                      | Details & key outputs                                                                                                                                                                                                 |
@@ -34,4 +36,3 @@ Our pipeline walks through every stage, end-to-end:
 |  09 | **`ML vs DL.ipynb`**                 | Compare learning curves of SVM vs. CNN as data size grows.          | • Trains both models on 10 – 100 % of data.<br>• Plots Figure 4 and prints the CSV behind it.                                                                                                                         |
 
 
-The full report is available here →: [Deep Learning Vs Machine Learning A Study on SER.pdf](https://github.com/user-attachments/files/20856341/Deep.Learning.Vs.Machine.Learning.A.Study.on.SER.pdf)
