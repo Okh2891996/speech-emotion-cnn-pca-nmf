@@ -11,4 +11,4 @@
 |  09 | **`ML vs DL.ipynb`**                 | Compare learning curves of SVM vs. CNN as data size grows.          | • Trains both models on 10 – 100 % of data.<br>• Plots Figure 4 and prints the CSV behind it.                                                                                                                         |
 
 
-PDF for details: [Osama_EE8104_assignemnt5.pdf](https://github.com/user-attachments/files/20856333/Osama_EE8104_assignemnt5.pdf)
+PDF for details: [Deep Learning Vs Machine Learning A Study on SER.pdf](https://github.com/user-attachments/files/20856341/Deep.Learning.Vs.Machine.Learning.A.Study.on.SER.pdf)
